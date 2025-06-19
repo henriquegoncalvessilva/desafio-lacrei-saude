@@ -45,13 +45,6 @@ const Card = ({ professinal }: PropsCard) => {
                             />
                         );
                     })}
-
-                    {/* <TagBadge
-                        label="Mulher Trans"
-                        icon="transgenero"
-                        extension=".svg"
-                    />
-                    <TagBadge label="Lésbica" icon="lesbica" extension=".svg" /> */}
                 </CardTagsContainer>
                 <Divider
                     style={{
