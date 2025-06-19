@@ -9,7 +9,7 @@ type Orientation =
     | "heterossexual";
 
 interface Tag {
-    label: Race;
+    label: Race | string;
     icon: Orientation;
 }
 
