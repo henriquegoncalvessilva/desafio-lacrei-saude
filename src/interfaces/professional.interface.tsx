@@ -10,7 +10,7 @@ type Orientation =
 
 interface Tag {
     label: Race | string;
-    icon: Orientation;
+    icon: Orientation | string;
 }
 
 export interface Professional {
