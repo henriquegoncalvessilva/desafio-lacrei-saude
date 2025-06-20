@@ -23,7 +23,7 @@ const AccordionHeader = styled.summary`
     }
 `;
 
-const AccordionContent = styled.div`
+const AccordionContent = styled.section`
     margin-top: 8px;
     padding: 12px;
     border: 1px solid rgb(81, 81, 81);

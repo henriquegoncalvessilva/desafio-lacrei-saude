@@ -143,7 +143,7 @@ const FooterLink = styled.a`
     width: fit-content;
     padding: 12px 0;
 `;
-const FooterContainerDetails = styled.div`
+const FooterContainerDetails = styled.section`
     text-align: left;
     margin: 0 auto;
     max-width: 1440px;

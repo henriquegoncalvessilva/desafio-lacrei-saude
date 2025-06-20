@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Breadcrumb = styled.div`
+const Breadcrumb = styled.section`
     height: 28px;
     width: 100%;
     margin: 48px 0 24px 0;
