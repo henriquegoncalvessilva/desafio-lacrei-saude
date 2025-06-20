@@ -41,8 +41,12 @@ const CardContentContainer = dynamic(
     }
 );
 
-export default function Home() {
-    const mock: Professional[] = [
+type HomePropsTesting = {
+    professionals?: Professional[];
+};
+
+export default function Home({ professionals }: HomePropsTesting) {
+    const mock: Professional[] = professionals || [
         {
             name: "Dra. Cleysiane de Araujo Oliveira",
             area: "Fisioterapeuta",
@@ -214,15 +218,16 @@ export default function Home() {
                 </TitleSM>
             </TitleContainer>
 
-            <CardContentContainer>
-                {mock.map((professional, index) => (
-                    <Card
-                        professinal={professional as Professional}
-                        key={index}
-                    />
-                ))}
-            </CardContentContainer>
-            {mock.length === 0 ? (
+            {mock.length > 0 ? (
+                <CardContentContainer>
+                    {mock.map((professional, index) => (
+                        <Card
+                            professinal={professional as Professional}
+                            key={index}
+                        />
+                    ))}
+                </CardContentContainer>
+            ) : (
                 <div
                     style={{
                         display: "flex",
@@ -235,7 +240,7 @@ export default function Home() {
                         Tente novamente mais tarde.
                     </h4>
                 </div>
-            ) : null}
+            )}
         </>
     );
 }

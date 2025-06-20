@@ -158,3 +158,4 @@ const Card = ({ professinal }: PropsCard) => {
 };
 
 export default dynamic(() => Promise.resolve(Card), { ssr: false });
+export { Card };

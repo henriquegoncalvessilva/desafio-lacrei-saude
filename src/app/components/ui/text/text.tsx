@@ -3,7 +3,7 @@ import React from "react";
 import { TextSmHighlighted, TextXL, TextBase } from "./style";
 
 type TextProps = React.HTMLAttributes<HTMLElement> & {
-    label: string;
+    label: string | null;
     size: "SM-HIGHLIIGHTED" | "MD" | "LG" | "XL" | "BASE-HIGHLIGHT";
 };
 
