@@ -139,16 +139,10 @@ As telas foram testadas usando o plugin(navegador) Reponsive Viewer e o inspecto
 
 ![Mobile](./screenshots/01.png)
 
-Link da imagem - https://i.ibb.co/rKktWTSk/11.png
-
 ### Tablet
 
 ![Tablet](./screenshots/02.png)
 
-Link da imagem - https://i.ibb.co/HLQ2w3hP/22.png
-
 ### Notebook - Desktop
 
 ![Notebook - Desktop](./screenshots/03.png)
-
-Link da imagem - https://i.ibb.co/6cDD76G4/03.png
