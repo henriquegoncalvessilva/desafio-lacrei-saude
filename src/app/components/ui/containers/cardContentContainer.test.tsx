@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import { describe, expect } from "vitest";
-import Home from "./page";
+import CardContentContainer from "./cardContentContainer";
 
 const mockProfessionals = [
     {
@@ -36,14 +36,14 @@ const mockProfessionals = [
     },
 ];
 
-describe("HomePage", () => {
+describe("CardContentContainer", () => {
     test("Deve ter algum profissional na tela e não aparecer uma mensagem de erro", async () => {
-        render(<Home professionals={mockProfessionals} />);
+        render(<CardContentContainer professionals={mockProfessionals} />);
 
         expect(await screen.findByText("Dr. Vinícius Santana"));
     });
     test("Deve aparecer uma mensagem de erro se não houver profissional", () => {
-        render(<Home professionals={[]} />);
+        render(<CardContentContainer professionals={[]} />);
 
         expect(
             screen.getByText(

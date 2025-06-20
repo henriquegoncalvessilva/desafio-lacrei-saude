@@ -1,7 +1,6 @@
 "use client";
 import "material-symbols";
 import dynamic from "next/dynamic";
-const Card = dynamic(() => import("./components/ui/card/card"), { ssr: false });
 import { Divider } from "./components/ui/divider";
 import React from "react";
 import { Professional } from "@/interfaces/professional.interface";
@@ -41,12 +40,8 @@ const CardContentContainer = dynamic(
     }
 );
 
-type HomePropsTesting = {
-    professionals?: Professional[];
-};
-
-export default function Home({ professionals }: HomePropsTesting) {
-    const mock: Professional[] = professionals || [
+export default function Home() {
+    const mock: Professional[] = [
         {
             name: "Dra. Cleysiane de Araujo Oliveira",
             area: "Fisioterapeuta",
@@ -201,7 +196,6 @@ export default function Home({ professionals }: HomePropsTesting) {
             payment: "Cartão / Dinheiro / Convênio",
         },
     ];
-
     return (
         <>
             <TitleContainer>
@@ -218,29 +212,7 @@ export default function Home({ professionals }: HomePropsTesting) {
                 </TitleSM>
             </TitleContainer>
 
-            {mock.length > 0 ? (
-                <CardContentContainer>
-                    {mock.map((professional, index) => (
-                        <Card
-                            professinal={professional as Professional}
-                            key={index}
-                        />
-                    ))}
-                </CardContentContainer>
-            ) : (
-                <div
-                    style={{
-                        display: "flex",
-                        alignContent: "center",
-                        justifyContent: "center",
-                    }}
-                >
-                    <h4>
-                        No momento não possuimos profissionais disponíveis.
-                        Tente novamente mais tarde.
-                    </h4>
-                </div>
-            )}
+            <CardContentContainer professionals={mock}></CardContentContainer>
         </>
     );
 }

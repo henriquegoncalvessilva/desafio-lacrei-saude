@@ -19,27 +19,27 @@ export interface Question {
 }
 const Ajuda: NextPage = () => {
     const mock: Question[] = [
-        // {
-        //     question: "Os Profissionais são da Lacrei Saúde?",
-        //     answer: "Não. Os profissionais são autonomos e não possuem vinculo com a Lacrei Saúde.",
-        // },
-        // {
-        //     question:
-        //         "Os Prossifionais estão aptos a atenderem pessoas com deficiencia? Por exemplo pessoas surdas?",
-        //     answer: "Sim, alguns dos profissionais sabem LIBRAS e conseguem atender surdos sem nenhuma dificuldade.",
-        // },
-        // {
-        //     question: "Os atendimentos são humanizados?",
-        //     answer: "Sim, todos os atendimentos são humanizados. Todos os profissionais que atendem através da Lacrei saúde, passam por entrevistas antes de iniciar seus atendimentos.",
-        // },
-        // {
-        //     question: "A Lacrei Saúde aceita todas as formas de pagamento?",
-        //     answer: "Sim! Aceitamos todas as formas de pagamento, como: PIX, Cartão de Crédito e Boleto Bancário.",
-        // },
-        // {
-        //     question: "A Lacrei Saúde atua em quais áreas médicas?",
-        //     answer: "Possuimos a parceria com diversos profissionais de saúde, que por sua vez, atuam em diversas especialidades.",
-        // },
+        {
+            question: "Os Profissionais são da Lacrei Saúde?",
+            answer: "Não. Os profissionais são autonomos e não possuem vinculo com a Lacrei Saúde.",
+        },
+        {
+            question:
+                "Os Prossifionais estão aptos a atenderem pessoas com deficiencia? Por exemplo pessoas surdas?",
+            answer: "Sim, alguns dos profissionais sabem LIBRAS e conseguem atender surdos sem nenhuma dificuldade.",
+        },
+        {
+            question: "Os atendimentos são humanizados?",
+            answer: "Sim, todos os atendimentos são humanizados. Todos os profissionais que atendem através da Lacrei saúde, passam por entrevistas antes de iniciar seus atendimentos.",
+        },
+        {
+            question: "A Lacrei Saúde aceita todas as formas de pagamento?",
+            answer: "Sim! Aceitamos todas as formas de pagamento, como: PIX, Cartão de Crédito e Boleto Bancário.",
+        },
+        {
+            question: "A Lacrei Saúde atua em quais áreas médicas?",
+            answer: "Possuimos a parceria com diversos profissionais de saúde, que por sua vez, atuam em diversas especialidades.",
+        },
     ];
 
     return (
