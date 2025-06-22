@@ -5,7 +5,7 @@ const TitleXL = styled.h1`
     font-size: 3rem;
     line-height: 120%;
 `;
-const TitleSM = styled.h3`
+const TitleSM = styled.h2`
     font-weight: 700;
     font-size: 1.2rem;
     line-height: 120%;

@@ -146,3 +146,9 @@ As telas foram testadas usando o plugin(navegador) Reponsive Viewer e o inspecto
 ### Notebook - Desktop
 
 ![Notebook - Desktop](./screenshots/03.png)
+
+## Status de acessibilidade e desempenho - Lighthouse
+
+![Acessibilidade](./screenshots/acessibilidade_stats.png)
+
+![Desempenho](./screenshots/performance_stats.png)
