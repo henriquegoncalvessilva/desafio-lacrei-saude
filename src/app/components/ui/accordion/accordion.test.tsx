@@ -18,11 +18,13 @@ describe("Accordion component", () => {
             />
         );
 
-        expect(screen.getByText("Qual é o proposito da Lacrei Saúde?"));
+        expect(
+            screen.getByText("Qual é o proposito da Lacrei Saúde?")
+        ).toBeInTheDocument();
         expect(
             screen.getByText(
                 "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate enim officia quas laborum vel cumque quae officiis maxime, corporis possimus deserunt nostrum vitae eum eius impedit vero at eaque? Dignissimos."
             )
-        );
+        ).toBeInTheDocument();
     });
 });

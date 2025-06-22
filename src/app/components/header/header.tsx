@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import dynamic from "next/dynamic";
 import styled from "styled-components";
 import Image from "next/image";
@@ -124,7 +125,12 @@ const Header = () => {
                 height={64}
             />
             <ButtonsHeaderContainer>
-                <Link href={"/ajuda"} id="button-help-desktop">
+                <Link
+                    href={"/ajuda"}
+                    id="button-help-desktop"
+                    data-testid="link-ajuda"
+                    aria-label="Ajuda"
+                >
                     <Button variant="secondary" label="Ajuda" />
                 </Link>
                 <Link href={"/ajuda"} id="button-help-mobile">

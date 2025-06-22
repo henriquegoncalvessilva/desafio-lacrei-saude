@@ -37,7 +37,7 @@ const Footer = () => (
                         id="logo-footer"
                     />
 
-                    <FooterContentSocials id="socials">
+                    <FooterContentSocials id="socials" data-testid="socials">
                         <a href="">
                             <Image
                                 style={{ color: "red" }}

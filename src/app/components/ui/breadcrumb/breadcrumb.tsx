@@ -11,7 +11,9 @@ const BreadCrumb = () => {
                     margin: "48px 0 24px 0",
                 }}
             >
-                <Link href={"/"}>Início {">"} </Link>
+                <Link data-testid="link-inicio" href={"/"}>
+                    Início {">"}{" "}
+                </Link>
                 <span style={{ color: "rgb(1, 135, 98)" }}>
                     Dúvidas Frequentes
                 </span>

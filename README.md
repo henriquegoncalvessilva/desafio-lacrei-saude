@@ -77,7 +77,7 @@ Rode o projeto com o código abaixo
   npm run dev
 ```
 
-### Rodar o servidor localmente(Opicional)
+### Rodar o servidor localmente(Opcional)
 
 **Os dados inicialmente estão mockados. Porém, você pode usar o JSON SERVER para rodar um servidor local. Basta acessar o link: https://www.npmjs.com/package/json-server e seguir os passos. É bem simples.**
 
@@ -97,27 +97,45 @@ Para realizar um **rollback** na VERCEL, basta:
 
 2 - Ir na aba "Deployments"
 
-3 - Ao acessar a lista de deploys anteriores, podemos fazer o rollback clicando nos três pontinhos do lado direito do deploy e posteriormente clicar em "Redeploy" e por fim, confirme o redeploy.
+3 - Clicar nos três pontinhos do lado direito do deploy
+
+4 - Por fim, clicar em "Redeploy".
 
 Obs: É importante que o projeto do Vercel, esteja conectado a conta do GitHub, caso contrário, não dá para fazer o rollback usando a Vercel.
 
 ## Testes unitários
 
-Para rodar os testes unitários, basta executar o comando abaixo, e no fim do test é gerado o vitest-report.json, onde pode encontrar todos os registros dos testes.
+### Print da execução dos testes listados acima:
+
+![Resultado dos testes](./screenshots/tests.png)
+
+Os componentes que estão sendo testados são:
+
+      - BreadCrumb
+        - Testa se existe o botão de navegação para a tela inicial;
+
+      - Footer
+        - Testa se as redes sociais e os títulos das informações do footer existem.
+
+      - Header
+        - Testa se existe o botão de navegação para a tela de Ajuda;
+
+      - Accordion
+        - Testa se o componente Accordion, que é usado na tela de ajuda, está exibindo as informações quando elas são passadas.
+
+      - Card Content Container
+        - Testa se o componente exibe a mensagem de erro quando não existem registros na tela de ajuda.
+
+      - Card
+        - Testa se as informações dos profissionais são exibidas quando os dados são passados para o componente.
+
+**Para o teste utilizei o Vitest, pois tive algumas dificuldades de instação/configuração do Jest.**
+
+Para rodar os testes unitários, basta executar o comando abaixo, e no fim do test é gerado o **vitest-report.json**, onde pode encontrar todos os registros dos testes.
 
 ```bash
   npm run test
 ```
-
-Para o teste utilizei o Vitest, pois tive algumas dificuldades com o Jest.
-
-Foram testados **3 componentes**, que são fundamentais para o funcionamento do projeto:
-
--   **Componente de listagem** dos cards dos profissionais;
--   **Componente Card**, que é responsável por exibir os dados dos profissionais;
--   **Componente Accordion**, que é utilizado na seção de Ajuda do projeto;
-
-Foram testados cenários desde a exibição das informações, quanto a NÃO exibição das informações que compõe esses componentes.
 
 # Screenshots
 
