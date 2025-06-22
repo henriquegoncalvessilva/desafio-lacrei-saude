@@ -125,7 +125,7 @@ Os componentes que estão sendo testados são:
       - Card
         - Testa se as informações dos profissionais são exibidas quando os dados são passados para o componente.
 
-**Para o teste utilizei o Vitest, pois tive algumas dificuldades de instação/configuração do Jest.**
+**Para o teste utilizei o Vitest, pois tive algumas dificuldades de instalação/configuração do Jest.**
 
 ### Print da execução dos testes listados acima:
 
