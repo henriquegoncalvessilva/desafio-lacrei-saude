@@ -1,4 +1,4 @@
-# ⭐ Desafio Técnico Lacrei Saúde – Desenvolvedor(a) Front-End (Next.js)
+# 💻 Desafio Técnico – Front-end na Lacrei Saúde
 
 ​
 
