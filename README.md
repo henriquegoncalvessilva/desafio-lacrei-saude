@@ -105,10 +105,6 @@ Obs: É importante que o projeto do Vercel, esteja conectado a conta do GitHub, 
 
 ## Testes unitários
 
-### Print da execução dos testes listados acima:
-
-![Resultado dos testes](./screenshots/tests.png)
-
 Os componentes que estão sendo testados são:
 
       - BreadCrumb
@@ -130,6 +126,10 @@ Os componentes que estão sendo testados são:
         - Testa se as informações dos profissionais são exibidas quando os dados são passados para o componente.
 
 **Para o teste utilizei o Vitest, pois tive algumas dificuldades de instação/configuração do Jest.**
+
+### Print da execução dos testes listados acima:
+
+![Resultado dos testes](./screenshots/tests.png)
 
 Para rodar os testes unitários, basta executar o comando abaixo, e no fim do test é gerado o **vitest-report.json**, onde pode encontrar todos os registros dos testes.
 
